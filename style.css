@@ -1,0 +1,109 @@
+div img{
+    width: 50%;
+}
+/* div {
+ font-size: 3em;} */
+div img:hover{
+    width: 50%;
+    motion: rotation 120grad;
+}
+
+#bodyp{
+  background-image: url(img/hola5.gif);
+  background-size: 1000px;
+  width: 100%;
+  height: 45px;
+
+}
+#button{
+  position: absolute;
+  font-size: 20px;
+  top: 40%;
+  background-color: rgb(22, 22, 22);
+}
+#h2{
+  position: absolute;
+  font-size: 50px;
+  top: 25%;
+  left: 35%;
+color: rgba(237, 241, 237, 0.76);
+  
+}
+
+#barraEnemigo, #barraJugador {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #b91010;
+    margin-bottom: 10px;
+  }
+  
+  #barraEnemigo {
+    background-color: red;
+    top: 85%;
+  }
+  
+  #barraJugador {
+    background-color: green;
+  }
+  
+  .vida-porcentaje {
+    position: absolute;
+    left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    padding-top: 11px;
+    font-family: cursive;
+  }
+
+  .poss {
+    font-weight: 900;
+    font-size: 30px;
+    font-family: cursive;
+  }
+
+  h4{
+    font-size: 25px;
+    font-family: cursive;
+  }
+  p {
+    font-size: 18px;
+    font-family: cursive;
+  }
+.bloques {
+    display: flex;
+    text-align: center;
+}
+.jugador {
+    margin-bottom: 10px;
+}
+#jugador2{
+  background-image: url(img/hola.gif);
+  font-size: 80px;
+  color: aliceblue;
+}
+#jugador1{
+  color: aliceblue;
+}
+
+#fuego{
+  font-size: 20px;
+}
+
+body{
+ background-image:url(img/ataque\ 1.gif) ;
+  background-size:contain;
+}
+#mensajeContainer{
+  color: aliceblue;
+}
+#mensaje{
+  color: aliceblue;
+}
+#mensaje-perdedor{
+   background-color: rgb(231, 231, 235);
+}
+#mensaje-ganador{
+  color: rgb(16, 17, 17);
+}

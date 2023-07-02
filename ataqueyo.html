@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="juego.js"></script>
+    <title>mi juego</title>
+</head>
+
+<body>
+    <div id="mensaje">
+
+    </div>
+
+    <div id="jugador1" class="jugador">
+        <h4>jugador1</h4>
+        <p>es tu turno de atacar</p>
+        <div class="bloques">
+            <div><img style="width: 48%;"
+                    src="img/ataque 1.gif" alt="" onclick="ataqueEnemigo(10,'Ataque de tierra'), cambiarTurno();">
+                <p>Ataque de tierra</p>
+            </div>
+            <div id="fuego"><img src="img/ataque2.gif" alt="" onclick="ataqueEnemigo(20,'Ataque de agua'), cambiarTurno();">
+                <p>Ataque de fuego</p>
+            </div>
+            <div id="ataqueagua"><img style="height: 80%;"
+                    src="img/ataque3.gif" alt="" onclick="ataqueEnemigo(30,'Ataque de fuego'), cambiarTurno();">
+                <p>Ataque de agua</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="jugador2" class="jugador" style="display: none;">
+        <h4>Jugador 2</h4>
+        <p>defiendete</p>
+        <div class="bloques">
+            <div class="poss" ><img style="width: 30%;"
+                    src="img/defensa1.gif" alt="" onclick="escudoDefensor(10,'pocion verde'), cambiarTurno();">
+                <p>Posión verde</p>
+            </div>
+            <div class="poss"><img style="width: 30%;"
+                    src="img/defensa2.gif" alt="" onclick="escudoDefensor(20,'pocion azul'), cambiarTurno();">
+                <p>Posión azul</p>
+            </div>
+            <div class="poss"><img style="width: 30%;"
+                    src="img/defensa3.gif" alt="" onclick="escudoDefensor(30,'pocion roja'), cambiarTurno();">
+                <p>Posión roja</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="barraEnemigo">
+        <span class="vida-porcentaje"></span>
+    </div>
+    <div id="barraJugador">
+        <span class="vida-porcentaje"></span>
+    </div>
+
+    <div id="mensaje-ganador" style="display: none;">
+       ! has ganado ¡
+    </div>
+
+    <div id="mensaje-perdedor" style="display: none;">
+       ! has perdido ¡
+    </div>
+
+   <!-- 
+    <section class="caja-mensaje">
+        <div class="mensaje-caja" id="mensajeContainer">mensaje</div>
+
+    </section>
+    <div onclick="ataqueEnemigo(10,'Ataque de agua',aleatorio);"><img src="img/flash.png" alt=""></div>
+        <div onclick="ataqueEnemigo(20,'Ataque de fuego',aleatorio);"><img src="img/agua2.png" alt=""></div>
+        <div onclick="ataqueEnemigo(30,'Ataque de fuego',aleatorio);"><img src="img/agua2.png" alt=""></div>
+        <button onclick="juan;">MUESTRA VIDA</button>-->
+
+</body>
+
+</html>
+<!--ataqueEnemigo,2000,-->
